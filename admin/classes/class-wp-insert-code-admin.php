@@ -17,7 +17,7 @@ class Wp_Insert_Code_Admin
         // Initialize the plugin functionality
         $this->init();
 
-		// Agregar menÃº en el dashboard
+		// Agregar menú en el dashboard
 		if ( is_multisite() && is_main_site() ) {
 			add_action( 'network_admin_menu', array( $this, 'wpic_menu_administrador' ) );
 		}else{
@@ -65,7 +65,7 @@ class Wp_Insert_Code_Admin
 	 * Enqueue scripts js and css (and BootStrap)
 	 *
 	 * @since 1.0
-	 * @author Javier VÃ­lchez Luque
+	 * @author Javier Vílchez Luque
 	 *
 	 * @return void
 	 */
