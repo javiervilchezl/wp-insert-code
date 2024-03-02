@@ -1,0 +1,31 @@
+.ow-h3{
+	font-size: 1.25em;
+}
+.span-h{
+	color: #008000;
+    font-size: 17px;
+    border: 1px solid #008000;
+    padding: 0px 5px;
+    margin-left: 5px;
+}
+.input-group-small{
+    max-width: 350px;
+}
+.card{
+    padding: 0px !important;
+    max-width: 1024px !important;
+}
+.card-header{
+    background-color: #2087d9 !important;
+    color: #FFFFFF !important;
+}
+.input-100{
+    max-width: 100px !important;
+}
+.span-157{
+    min-width: 157px !important;
+}
+.label-danger{
+    color: #ff0000;
+    font-size: 0.8rem;
+}
