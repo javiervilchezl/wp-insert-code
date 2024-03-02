@@ -1,21 +1,36 @@
-MIT License
+# WP Insert Code
 
-Copyright (c) 2024 javiervilchezl
+[**License MIT**](https://github.com/javiervilchezl/wp-insert-code/blob/master/LICENSE)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Insert code fragments in the header, footer and functions.php of your Wordpress.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## Install
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Download it compressed in zip, in the plugin panel of your WordPress select upload plugin, then activate it.
+
+## Uses
+
+You will be able to create them independently and thus have them fully controlled, being able to enable or disable any of them at any time.
+
+>**Note**: When you create a new code fragment for the header or footer, we consider that you want to include javascript or css, in either of these 2 cases use the corresponding opening and closing tags
+
+```bash
+# using css
+<style>write your code here. ..</style>
+# using JavaScript
+<script>write your code here...</script>
+```
+En el caso de crear fragmentos de códigos para el functions.php no es necesario ninguna etiqueta para php, te dejo un ejemplo para un nuevo fragmento de codigo para el functions.php
+
+```bash
+# Modify the footer text in the administration part
+function custom_text_footer_admin() {
+return 'Thank you for believing in ...';
+}
+add_action( 'admin_footer_text', 'custom_text_footer_admin' );
+```
+
+
+
+
+

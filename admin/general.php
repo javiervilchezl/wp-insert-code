@@ -75,7 +75,7 @@
                                             <select class="form-select" id="snippetCategory2" name="snippetCategory2">
                                                 <option value="Header" <?php if($categoryeedit=="Header"){ echo "selected";} ?> >Header</option>
                                                 <option value="Footer" <?php if($categoryeedit=="Footer"){ echo "selected";} ?> >Footer</option>
-                                                <option value="Function" <?php if($categoryeedit=="Function"){ echo "selected";} ?> >Function</option>
+                                                <option value="Functions" <?php if($categoryeedit=="Functions"){ echo "selected";} ?> >Functions</option>
                                             </select>
                                         </div>
                                         <div class="mb-3">
@@ -132,7 +132,7 @@
                             <select class="form-select" id="snippetCategory" name="snippetCategory">
                                 <option value="Header">Header</option>
                                 <option value="Footer">Footer</option>
-                                <option value="Function">Function</option>
+                                <option value="Functions">Functions</option>
                             </select>
                         </div>
                         <div class="mb-3">

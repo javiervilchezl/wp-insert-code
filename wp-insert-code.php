@@ -2,13 +2,13 @@
 
 /**
  * Plugin Name: WP Insert Code
- * Plugin URI: #
+ * Plugin URI: https://github.com/javiervilchezl/wp-insert-code
  * Description: Wordpress plugin to insert code in the header, footer and function.php, custom code snippet.
  * Version: 1.0
  * Requires at least: 5.8
  * Requires PHP: 7.3
  * Author: Javier Vílchez Luque
- * Author URI: #
+ * Author URI: https://github.com/javiervilchezl/wp-insert-code
  * Licence: GPLv2 or later
  *
  * Copyright 2023-2024 WP Insert Code

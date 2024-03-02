@@ -411,19 +411,19 @@ class Wp_Insert_Code_List_table extends WP_List_Table
 		$input_id = $input_id . '-search-input';
 
 		if ( ! empty( $_REQUEST['orderby'] ) ) { // phpcs:ignore
-			echo '<input type="hidden" name="orderby" value="' . esc_attr( wp_unslash( $_REQUEST['orderby'] ) ) . '" />'; // phpcs:ignore
+			echo '<input type="hidden" name="orderby" value="' . esc_attr( wp_unslash( $_REQUEST['orderby'] ) ) . '" />'; 
 		}
 		if ( ! empty( $_REQUEST['order'] ) ) { // phpcs:ignore
-			echo '<input type="hidden" name="order" value="' . esc_attr( wp_unslash( $_REQUEST['order'] ) ) . '" />'; // phpcs:ignore
+			echo '<input type="hidden" name="order" value="' . esc_attr( wp_unslash( $_REQUEST['order'] ) ) . '" />'; 
 		}
 		if ( ! empty( $_REQUEST['post_mime_type'] ) ) { // phpcs:ignore
-			echo '<input type="hidden" name="post_mime_type" value="' . esc_attr( wp_unslash( $_REQUEST['post_mime_type'] ) ) . '" />'; // phpcs:ignore
+			echo '<input type="hidden" name="post_mime_type" value="' . esc_attr( wp_unslash( $_REQUEST['post_mime_type'] ) ) . '" />'; 
 		}
 		if ( ! empty( $_REQUEST['detached'] ) ) { // phpcs:ignore
-			echo '<input type="hidden" name="detached" value="' . esc_attr( wp_unslash( $_REQUEST['detached'] ) ) . '" />'; // phpcs:ignore
+			echo '<input type="hidden" name="detached" value="' . esc_attr( wp_unslash( $_REQUEST['detached'] ) ) . '" />'; 
 		}
 		if ( ! empty( $_REQUEST['tab'] ) ) { // phpcs:ignore
-			echo '<input type="hidden" name="tab" value="' . esc_attr( wp_unslash( $_REQUEST['tab'] ) ) . '" />'; // phpcs:ignore
+			echo '<input type="hidden" name="tab" value="' . esc_attr( wp_unslash( $_REQUEST['tab'] ) ) . '" />';
 		}
 		?>
 		<p class="search-box">

@@ -198,7 +198,7 @@ defined( 'ABSPATH' ) || exit;
 	    {
 		    global $wpdb;
 		    $table_name = $wpdb->prefix . "wpic_insert_code_snippet";
-		    $res = $wpdb->get_results( "SELECT * FROM $table_name WHERE category = 'Function' AND state = 'Enabled'", ARRAY_A);
+		    $res = $wpdb->get_results( "SELECT * FROM $table_name WHERE category = 'Functions' AND state = 'Enabled'", ARRAY_A);
 			return $res;
 		}
 		
