@@ -6,10 +6,10 @@
  * Description: Wordpress plugin to insert code in the header, footer and function.php, custom code snippet.
  * Version: 1.1
  * Requires at least: 5.8
- * Requires PHP: 7.3
+ * Requires PHP: 5.6
  * Author: Javier Vílchez Luque
  * Author URI: https://github.com/javiervilchezl/wp-insert-code
- * Licence: GPLv2 or later
+ * Licence: License MIT
  *
  * Copyright 2023-2024 WP Insert Code
  */
@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 define( 'WPIC_VERSION',               '1.1' );
 define( 'WPIC_WP_VERSION',            '5.8' );
 define( 'WPIC_WP_VERSION_TESTED',     '6.4' );
-define( 'WPIC_PHP_VERSION',           '7.3' );
+define( 'WPIC_PHP_VERSION',           '5.6' );
 define( 'WPIC_FILE',                  __FILE__ );
 define( 'WPIC_REAL_PATH',             realpath( plugin_dir_path( WPIC_FILE ) ) . '/' );
 define( 'WPIC_PATH',                  plugin_dir_path(WPIC_FILE));
