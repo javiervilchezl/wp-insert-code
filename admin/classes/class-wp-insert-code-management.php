@@ -2,14 +2,19 @@
 defined( 'ABSPATH' ) || exit;
 
 	/**
-	 * 
+	 * Class to handle database table data
 	 */
 	class Wp_Insert_Code_Management
 	{
 
 		/**
-	     * Create table
-	     */
+		 * Create table wpic_insert_code_snippet
+		 *
+		 * @since 1.0
+		 * @author Javier Vílchez Luque
+		 *
+		 * @return void
+		 */
 	    public function wpic_create_table()
 	    {
 	    	global $wpdb;
@@ -31,8 +36,13 @@ defined( 'ABSPATH' ) || exit;
 		}
 
 		/**
-	     * Drop table
-	     */
+		 * Drop table wpic_insert_code_snippet
+		 *
+		 * @since 1.0
+		 * @author Javier Vílchez Luque
+		 *
+		 * @return void
+		 */
 	    public function wpic_drop_table()
 	    {
 
@@ -43,8 +53,14 @@ defined( 'ABSPATH' ) || exit;
 		}
 
 		/**
-	     * Insert
-	     */
+		 * Insert new code snippet in table wpic_insert_code_snippet
+		 *
+		 * @since 1.0
+		 * @author Javier Vílchez Luque
+		 *
+		 * @param array $data: (name, description, category, code, state).
+		 * @return html notice success/error
+		 */
 	    public function wpic_insert_table($data)
 	    {
 	    	
@@ -66,8 +82,13 @@ defined( 'ABSPATH' ) || exit;
 		}
 
 		/**
-	     * Get All Snippets
-	     */
+		 * Get all code snippet of table wpic_insert_code_snippet
+		 *
+		 * @since 1.0
+		 * @author Javier Vílchez Luque
+		 *
+		 * @return array $res (result query)
+		 */
 		public function wpic_select_all_table()
 	    {
 		    global $wpdb;
@@ -78,8 +99,14 @@ defined( 'ABSPATH' ) || exit;
 		}
 
 		/**
-	     * Get ID Snippet
-	     */
+		 * Gets the id of a code snippet
+		 *
+		 * @since 1.0
+		 * @author Javier Vílchez Luque
+		 *
+		 * @param string $name (name/title of code snippet).
+		 * @return int $snippet_id (id code snippet)
+		 */
 		function wpic_get_id_snippet( $name ) {
 			global $wpdb; 	
 			$table_name = $wpdb->prefix . "wpic_insert_code_snippet";						 
@@ -90,8 +117,14 @@ defined( 'ABSPATH' ) || exit;
 		} 
 
 		/**
-	     * Get a Snippet
-	     */
+		 * Gets a code snippet
+		 *
+		 * @since 1.0
+		 * @author Javier Vílchez Luque
+		 *
+		 * @param int $id (id of code snippet).
+		 * @return array $snippet_row (row: result query)
+		 */
 		function wpic_get_a_snippet( $id ) {
 			global $wpdb; 	
 			$table_name = $wpdb->prefix . "wpic_insert_code_snippet";						 
@@ -102,8 +135,14 @@ defined( 'ABSPATH' ) || exit;
 		} 
 
 		/**
-	     * Delete snippet
-	     */
+		 * Delete a code snippet
+		 *
+		 * @since 1.0
+		 * @author Javier Vílchez Luque
+		 *
+		 * @param int $id (id of code snippet).
+		 * @return boool result for wpdb query true/false
+		 */
 		function wpic_delete_snippet( $id ) {
 			global $wpdb; 							
 
@@ -115,8 +154,14 @@ defined( 'ABSPATH' ) || exit;
 		} 
 
 		/**
-	     * Enabled snippet
-	     */
+		 * Enable a code snippet
+		 *
+		 * @since 1.0
+		 * @author Javier Vílchez Luque
+		 *
+		 * @param int $id (id of code snippet).
+		 * @return boool result for wpdb query true/false
+		 */
 		function wpic_enabled_snippet( $id ) {
 			global $wpdb; 							
 
@@ -132,8 +177,14 @@ defined( 'ABSPATH' ) || exit;
 		} 
 
 		/**
-	     * Disabled snippet
-	     */
+		 * Disable a code snippet
+		 *
+		 * @since 1.0
+		 * @author Javier Vílchez Luque
+		 *
+		 * @param int $id (id of code snippet).
+		 * @return boool result for wpdb query true/false
+		 */
 		function wpic_disabled_snippet( $id ) {
 			global $wpdb; 							
 
@@ -149,8 +200,14 @@ defined( 'ABSPATH' ) || exit;
 		} 
 
 		/**
-	     * Update snippet
-	     */
+		 * Update a code snippet
+		 *
+		 * @since 1.0
+		 * @author Javier Vílchez Luque
+		 *
+		 * @param array $data_snippet: (name, description, category, code, state).
+		 * @return boool result for wpdb query true/false
+		 */
 		function wpic_update_snippet( $data_snippet) {
 			global $wpdb; 							
 
@@ -170,8 +227,13 @@ defined( 'ABSPATH' ) || exit;
 		} 
 
 		/**
-	     * Get head snippets
-	     */
+		 * Gets all code snippets that belong to the header category
+		 *
+		 * @since 1.0
+		 * @author Javier Vílchez Luque
+		 *
+		 * @return array $res (result query)
+		 */
 		public function wpic_get_head_snippet()
 	    {
 		    global $wpdb;
@@ -181,8 +243,13 @@ defined( 'ABSPATH' ) || exit;
 		}
 
 		/**
-	     * Get footer snippets
-	     */
+		 * Gets all code snippets that belong to the footer category
+		 *
+		 * @since 1.0
+		 * @author Javier Vílchez Luque
+		 *
+		 * @return array $res (result query)
+		 */
 		public function wpic_get_footer_snippet()
 	    {
 		    global $wpdb;
@@ -192,8 +259,13 @@ defined( 'ABSPATH' ) || exit;
 		}
 
 		/**
-	     * Get function snippets
-	     */
+		 * Gets all code snippets that belong to the header functions
+		 *
+		 * @since 1.0
+		 * @author Javier Vílchez Luque
+		 *
+		 * @return array $res (result query)
+		 */
 		public function wpic_get_function_snippet()
 	    {
 		    global $wpdb;

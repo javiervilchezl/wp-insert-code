@@ -36,7 +36,7 @@ class Wp_Insert_Code_List_table extends WP_List_Table
 	 * Get the columns for the table
 	 *
 	 * @since 1.0
- 	 * @author Javier Vílchez Luque
+ 	 * @author Javier VÃ­lchez Luque
 	 * 
 	 */
     function get_columns()
@@ -53,9 +53,6 @@ class Wp_Insert_Code_List_table extends WP_List_Table
 
     /**
 	 * Gets the list of sortable columns
-	 *
-	 * @since 1.0
- 	 * @author Javier Vílchez Luque
  	 * 
  	 * @return array An associative array containing all sortable columns.
 	 * 
@@ -73,9 +70,6 @@ class Wp_Insert_Code_List_table extends WP_List_Table
 
 	 /**
 	 * Get the value of the default columns
-	 *
-	 * @since 1.0
-	 * @author Javier Vílchez Luque
 	 * 
 	 * @param object $item singular item.
 	 * @param string $column_name The column to be processed.
@@ -265,9 +259,6 @@ class Wp_Insert_Code_List_table extends WP_List_Table
 
 	/**
 	 * Get value for cb columns (input checkbox)
-	 *
-	 * @since 1.0
-	 * @author Javier Vílchez Luque
 	 * 
 	 * @param object $item singular item.
 	 * 
@@ -284,9 +275,6 @@ class Wp_Insert_Code_List_table extends WP_List_Table
 
 	/**
 	 * Process actions snippets list table
-	 *
-	 * @since 1.0
-	 * @author Javier Vílchez Luque
 	 * 
 	 * @return void
 	 * 
@@ -368,9 +356,6 @@ class Wp_Insert_Code_List_table extends WP_List_Table
 
 	/**
 	 * Bulk action
-	 *
-	 * @since 1.0
-	 * @author Javier Vílchez Luque
 	 * 
 	 * @return array.
 	 * 

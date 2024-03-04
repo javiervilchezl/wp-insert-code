@@ -17,7 +17,7 @@ class Wp_Insert_Code_Admin
         // Initialize the plugin functionality
         $this->init();
 
-		// Agregar menú en el dashboard
+		// Add menu to dashboard
 		if ( is_multisite() && is_main_site() ) {
 			add_action( 'network_admin_menu', array( $this, 'wpic_menu_administrador' ) );
 		}else{
@@ -25,7 +25,7 @@ class Wp_Insert_Code_Admin
 		}
 		
 		
-		// Agregar los scripts y css propios del plugin
+		// Add the plugin's own scripts and css
 		$page_url = "$_SERVER[REQUEST_URI]";
 
 		if(strpos($page_url, "wp-insert-code")){
@@ -40,7 +40,7 @@ class Wp_Insert_Code_Admin
      */
     public function load_classes()
     {
-        //require_once 'class-wp-insert-code-management.php';
+        
     }
 
     /**
@@ -48,7 +48,7 @@ class Wp_Insert_Code_Admin
      */
     public function init()
     {
-    	//$managementCode = new Wp_Insert_Code_Management();
+    	
     	
 	}
 
@@ -57,15 +57,14 @@ class Wp_Insert_Code_Admin
      */
 	public function wpic_menu_administrador()
 	{
-	    add_menu_page('WP Insert Code','WP Insert Code','manage_options',WPIC_ADMIN . '/general.php');
-	    //add_submenu_page( WPIC_ADMIN . '/general.php', 'Cache Navegador', 'Cache Navegador', 'manage_options', WPOW_INFINITED_SUBMENU_ADMIN . '/cache-browser.php');
+	    add_menu_page('WP Insert Code','WP Insert Code','manage_options',WPIC_ADMIN . '/general.php');//add_submenu_page( WPIC_ADMIN . '/general.php', 'Cache Navegador', 'Cache Navegador', 'manage_options', WPOW_INFINITED_SUBMENU_ADMIN . '/cache-browser.php');
 	}
 
 	/**
-	 * Enqueue scripts js and css (and BootStrap)
+	 * Enqueue scripts js and css
 	 *
 	 * @since 1.0
-	 * @author Javier Vílchez Luque
+	 * @author Javier VÃ­lchez Luque
 	 *
 	 * @return void
 	 */
@@ -75,8 +74,6 @@ class Wp_Insert_Code_Admin
 	    wp_enqueue_style( 'bootstrapCssToggle' , plugins_url( '../../assets/css/bootstrap4-toggle.min.css', __FILE__ ) , array(), 20141119 );
 	    wp_enqueue_style( 'wpicCss' , plugins_url( '../../assets/css/wpic.style.css', __FILE__ ) , array(), 20141119 );
 	    
-	    
-
 	    // scripts
 	    wp_enqueue_script( 'bootstrapJs' , plugins_url( '../../assets/js/bootstrap.min.js', __FILE__ ) , array( 'jquery' ), '20120206' , true );
 	    wp_enqueue_script( 'bootstrapJsToogle' , plugins_url( '../../assets/js/bootstrap4-toggle.min.js', __FILE__ ) , array( 'jquery' ), '20120206' , true );

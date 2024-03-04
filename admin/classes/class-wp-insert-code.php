@@ -1,7 +1,8 @@
 <?php
 defined( 'ABSPATH' ) || exit;
+
 /**
- * 
+ * Class WP Insert Code initialize
  */
 class Wp_Insert_Code
 {

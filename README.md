@@ -2,7 +2,7 @@
 
 [**License MIT**](https://github.com/javiervilchezl/wp-insert-code/blob/master/LICENSE)
 
-Insert code fragments in the header, footer and functions.php of your Wordpress.
+Insert code snippet in the header, footer and functions.php of your Wordpress.
 
 ## Install
 

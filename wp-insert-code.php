@@ -70,6 +70,14 @@ register_deactivation_hook(__FILE__,'wpic_plugin_deactivate');
 
 }
 
+/**
+ * Insert code snippet in header
+ *
+ * @since 1.0
+ * @author Javier Vílchez Luque
+ *
+ * @return void
+ */
 function wpic_insert_head() {
 	require_once(WPIC_CLASSES.'/class-wp-insert-code-management.php');
 	$wpic_insert_code_head = new Wp_Insert_Code_Management();
@@ -80,6 +88,14 @@ function wpic_insert_head() {
 }
 add_action( 'wp_head', 'wpic_insert_head' );
 
+/**
+ * Insert code snippet in footer
+ *
+ * @since 1.0
+ * @author Javier Vílchez Luque
+ *
+ * @return void
+ */
 function wpic_insert_footer() {
 	require_once(WPIC_CLASSES.'/class-wp-insert-code-management.php');
 	$wpic_insert_code_footer = new Wp_Insert_Code_Management();
@@ -90,6 +106,14 @@ function wpic_insert_footer() {
 }
 add_action( 'wp_footer', 'wpic_insert_footer' );
 
+/**
+ * Insert code snippet in function.php
+ *
+ * @since 1.0
+ * @author Javier Vílchez Luque
+ *
+ * @return void
+ */
 require_once(WPIC_CLASSES.'/class-wp-insert-code-management.php');
 $wpic_insert_code_function = new Wp_Insert_Code_Management();
 $snippet_function = $wpic_insert_code_function->wpic_get_function_snippet();

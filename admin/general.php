@@ -6,11 +6,14 @@
     require_once(WPIC_CLASSES.'/class-wp-insert-code-management.php');
     require_once(WPIC_CLASSES.'/class-wp-insert-code-list-table.php');
 
+    //When we save a new code snippet
     if (isset($_POST['save_code_snippet'])) {
     	$wpic_insert_code_table = new Wp_Insert_Code_Management();
     	$data = array('name' => $_POST['snippetTitle'], 'description' => $_POST['snippetDescription'], 'category' => $_POST['snippetCategory'], 'code' => wp_unslash($_POST['snippetCode'], true), 'state' => $_POST['snippetState']);
 		$wpic_insert_code_table->wpic_insert_table($data);
     }
+    
+    //When we edit a code snippet
     if (isset($_POST['edit_code_snippet'])) {
         $wpic_updated_snippet = new Wp_Insert_Code_Management();
     	$data_snippet = array('id' => $_POST['snippetId'], 'name' => $_POST['snippetTitle2'], 'description' => $_POST['snippetDescription2'], 'category' => $_POST['snippetCategory2'], 'code' => wp_unslash($_POST['snippetCode2'], true), 'state' => $_POST['snippetState2']);
