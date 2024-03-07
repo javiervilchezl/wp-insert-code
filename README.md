@@ -20,7 +20,7 @@ You will be able to create them independently and thus have them fully controlle
 # using JavaScript
 <script>write your code here...</script>
 ```
-En el caso de crear fragmentos de códigos para el functions.php no es necesario ninguna etiqueta para php, te dejo un ejemplo para un nuevo fragmento de codigo para el functions.php
+In the case of creating code fragments for functions.php, no tag for php is necessary, I leave you an example for a new code fragment for functions.php
 
 ```bash
 # Modify the footer text in the administration part
