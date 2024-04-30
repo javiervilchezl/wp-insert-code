@@ -4,6 +4,11 @@
 
 Insert code snippet in the header, footer and functions.php of your Wordpress.
 
+![WP-Insert-Code-Snippet---gestion-de-code-snippet](https://github.com/javiervilchezl/wp-insert-code/assets/161946280/479245c2-b5ba-45e3-b06c-28a789d67339)
+
+![WP-Insert-Code-Snippet-agregar-nuevo-code-snippet-](https://github.com/javiervilchezl/wp-insert-code/assets/161946280/a4179155-61d1-47b9-946e-73ea10a17a8a)
+
+
 ## Install
 
 Download it compressed in zip, in the plugin panel of your WordPress select upload plugin, then activate it.
